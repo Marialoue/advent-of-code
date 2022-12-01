@@ -20,6 +20,7 @@ const commands = content
     return arr;
   });
 
+// part 1
 const steerSubmarine = (commands) => {
   let horizontal = 0;
   let depth = 0;
@@ -44,5 +45,33 @@ const steerSubmarine = (commands) => {
   return depth * horizontal;
 };
 
+// part two
+const steerSubmarineWithAim = (commands) => {
+  let horizontal = 0;
+  let depth = 0;
+  let aim = 0;
+
+  for (const command of commands) {
+    switch (command[0]) {
+      case "forward":
+        horizontal += command[1];
+        depth += aim * command[1];
+        break;
+      case "up":
+        aim -= command[1];
+        break;
+      case "down":
+        aim += command[1];
+        break;
+      default:
+        break;
+    }
+  }
+  // result is depth * horizontal
+  return depth * horizontal;
+};
+
 const resultPartOne = steerSubmarine(commands);
+const resultPartTwo = steerSubmarineWithAim(commands);
 console.log(resultPartOne);
+console.log(resultPartTwo);
