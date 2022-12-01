@@ -12,7 +12,14 @@ Challenges for [2020](https://www.adventofcode.com/2020):
 
 ### 2021
 
-Challenges for [2020](https://www.adventofcode.com/2021):
+Challenges for [2021](https://www.adventofcode.com/2021):
 
 - Day 1: [Sonar Sweep](/2021/Sonar.js)
 - Day 2: [Dive](/2021/Dive.js)
+
+
+### 2022
+
+Challenges for [2022](https://www.adventofcode.com/2022):
+
+- Day 1: [Calorie Counting](/2022/Calorie.js)
